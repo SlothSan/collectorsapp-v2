@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 
+use App\Controllers\CardPageController;
 use App\Controllers\CoursesAPIController;
 use App\Controllers\HomePageController;
 use Slim\App;
@@ -11,5 +12,7 @@ return function (App $app) {
     $container = $app->getContainer();
 
     $app->get('/', HomePageController::class);
+
+    $app->get('/card/{cardTitle}', CardPageController::class);
 
 };

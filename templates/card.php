@@ -1,0 +1,4 @@
+<?php
+?>
+
+<?php print_r($card) ?>

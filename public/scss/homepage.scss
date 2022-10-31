@@ -92,12 +92,12 @@ body {
     .displayCardText {
       font-size: 1.2rem;
     }
-    .view-card-button {
+    .viewCardButton {
+      text-decoration: none;
       background-color: $background-red;
       color: $font-white;
       font-family: "Beleren", "sans-serif";
-      width: 120px;
-      height: 60px;
+      padding: 25px;
       border-radius: 5px;
       margin-bottom: 10px;
       border: $font-white 2px solid;
