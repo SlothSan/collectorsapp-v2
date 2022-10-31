@@ -19,10 +19,10 @@ class DisplayCards
                 return '';
             }
             $cardString = "<div class='displayCard'>";
-            $cardString .= "<p>Card Title: ". $card['title'] . "</p>";
-            $cardString .= "<p>Card Type: " . $card['cardType'] . "</p>";
-            $cardString .= "<p>Card Color: " . $card['color'] . "</p>";
-            $cardString .= "<p>Rarity: " . $card['raritySet'] . "</p>";
+            $cardString .= "<p class='displayCardText'>Card Title: ". $card['title'] . "</p>";
+            $cardString .= "<p class='displayCardText'>Card Type: " . $card['cardType'] . "</p>";
+            $cardString .= "<p class='displayCardText'Card Color: " . $card['color'] . "</p>";
+            $cardString .= "<p class='displayCardText'>Rarity: " . $card['raritySet'] . "</p>";
             $cardString .= "<form method='post'>";
             $cardString .= "<button class='view-card-button' type='submit' value='". $card['title'] . "' name='createCard'>View Card</button>";
             $cardString .= "</form>";

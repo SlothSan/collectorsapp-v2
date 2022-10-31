@@ -1,5 +1,9 @@
 /*Setup MTG Fonts*/
 
+$background-color: #2F4F4F;
+$background-red: #4d0013;
+$font-white: #FFFFFF;
+
 @font-face {
   font-family: 'Beleren Small Caps';
   src: url('../assets/fonts/BelerenSmallCaps-Bold.woff2') format('woff2'),
@@ -39,25 +43,88 @@ body {
   align-items: center;
   header {
     width: 350px;
-    height: 150px;
+    height: 300px;
     padding: 5px;
     margin: 10px;
     border-radius: 10px;
-    background-color: #2F4F4F;
-    color: #FFFFFF;
+    background-color: $background-color;
+    color: $font-white;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
 
     .headerTitle {
-      font-size: 1.5rem;
+      font-size: 1.8rem;
+      padding: 5px;
     }
     .headerText {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      padding: 5px;
     }
-    .headerTextTag {
+    .headerItalicText {
       font-style: italic;
     }
+  }
+}
+
+.cardDisplayContainer {
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .displayCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 350px;
+    background-color: $background-color;
+    color: $font-white;
+    gap: 5px;
+    padding: 5px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 5px solid $font-white;
+    .displayCardText {
+      font-size: 1.2rem;
+    }
+    .view-card-button {
+      background-color: $background-red;
+      color: $font-white;
+      font-family: "Beleren", "sans-serif";
+      width: 120px;
+      height: 60px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      border: $font-white 2px solid;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+footer {
+  margin-top: 20px;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  background-color: $background-color;
+  a {
+    font-size: 1.4rem;
+    text-decoration: none;
+    color: $font-white;
+  }
+  i {
+    font-size: 1.6rem;
+  }
+  .fa-spin-hover:hover {
+    animation: fa-spin 0.4s ease-in-out;
   }
 }
 
