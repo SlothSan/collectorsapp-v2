@@ -1,0 +1,63 @@
+/*Setup MTG Fonts*/
+
+@font-face {
+  font-family: 'Beleren Small Caps';
+  src: url('../assets/fonts/BelerenSmallCaps-Bold.woff2') format('woff2'),
+  url('../assets/fonts/BelerenSmallCaps-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Beleren';
+  src: url('../assets/fonts/Beleren-Bold.woff2') format('woff2'),
+  url('../assets/fonts/Beleren-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-size: 16px;
+  font-family: 'Beleren','sans-serif';
+  background-image: url("/assets/imgs/backgrounds/background2.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  header {
+    width: 350px;
+    height: 150px;
+    padding: 5px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #2F4F4F;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+    .headerTitle {
+      font-size: 1.5rem;
+    }
+    .headerText {
+      font-size: 1.1rem;
+    }
+    .headerTextTag {
+      font-style: italic;
+    }
+  }
+}
+
