@@ -23,7 +23,15 @@
         <p class="projectBlurbText">There is a database that holds Magic the gathering cards, they are displayed below with a link to view the card.</p>
     </section>
     <section class="cardDisplayContainer">
-        <?php print_r($cards) ?>
+        <?php
+
+        use App\Helpers\DisplayCards;
+
+        $displayCards = new DisplayCards;
+
+        echo $displayCards->createAllDisplayCards($cards);
+
+        ?>
     </section>
 </body>
 </html>
