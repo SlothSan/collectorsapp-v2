@@ -1,4 +1,5 @@
 <?php
+    session_start();
 ?>
 
 <html lang="en">
@@ -7,7 +8,7 @@
     <meta name="keywords" content="'Mike Oram', PHP, CSS, Magic The Gathering">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Mike Oram's PHP Collectors App">
-    <link href="normalize.css" type="text/css" rel="stylesheet">
+    <link href="/css/normalize.css" type="text/css" rel="stylesheet">
     <link href="/scss/createcard.css" type="text/css" rel="stylesheet">
     <title>MTG Card Collector - Create Card!</title>
 </head>
@@ -21,7 +22,7 @@
                 Click Here For Info On The Layout Of A Magic Card!
             </a>
         </div>
-        <form class="createCardForm" method="get" action="registrationpage.php">
+        <form class="createCardForm" method="post" action="/createcardconfirmation">
             <label for="title" id="title">Card Title: </label>
             <input type="text" name="title" alt="input for card title" placeholder="Centaur Courser" required>
             <label for="cardType" id-="cardType">Card Type: </label>

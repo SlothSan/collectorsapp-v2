@@ -1,0 +1,38 @@
+body {
+  background-image: url("/assets/imgs/backgrounds/background1.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  font-family: "Beleren", "sans-serif";
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.cardCreatedContainer {
+  background-color: #2F4F4F;
+  border: 2px solid #FFFFFF;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  color: #FFFFFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  a {
+    padding: 30px;
+    background-color: #4d0013;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    color: #FFFFFF;
+    width: 200px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-family: "Beleren", "sans-serif";
+  }
+}
