@@ -2,7 +2,9 @@
 declare(strict_types=1);
 
 use App\Controllers\AddCardToDb;
+use App\Controllers\CardAddedToDb;
 use App\Controllers\CardPageController;
+
 use App\Controllers\CreateCardController;
 use App\Controllers\HomePageController;
 use Slim\App;
@@ -20,6 +22,6 @@ return function (App $app) {
 
     $app->post('/createcardconfirmation', AddCardToDb::class);
 
-    $app->get('/createcardconfirmation', AddCardToDb::class);
+    $app->get('/createcardconfirmed', CardAddedToDb::class);
 
 };
