@@ -1,5 +1,6 @@
 <?php
-
+use App\Helpers\DisplayCards;
+$displayCards = new DisplayCards;
 ?>
 
 
@@ -23,15 +24,7 @@
         <p class="projectBlurbText">There is a database that holds Magic the gathering cards, they are displayed below with a link to view the card.</p>
     </section>
     <section class="cardDisplayContainer">
-        <?php
-
-        use App\Helpers\DisplayCards;
-
-        $displayCards = new DisplayCards;
-
-        echo $displayCards->createAllDisplayCards($cards);
-
-        ?>
+        <?php echo $displayCards->createAllDisplayCards($cards); ?>
     </section>
 </body>
 </html>
