@@ -1,5 +1,7 @@
 <?php
-
+if (is_bool($card)) {
+    header('Location: /');
+}
 use App\Helpers\DisplayCardGenerator;
 $displayCardGenerator = new DisplayCardGenerator;
 ?>
@@ -17,8 +19,7 @@ $displayCardGenerator = new DisplayCardGenerator;
         <h1 class="mtgCardHeaderTitle">MTG Card Generator</h1>
         <p class="mtgCardHeaderText">Takes the info from the DB and generates a card using PHP & CSS</p>
     </div>
-    <?php echo '<div class="cardBack' . $card['color'] . '"' .  '>' ?>
-    </div>
+    <?php echo $displayCardGenerator->createMTGCard($card) ?>
     <a class="returnButton" href="/">Go Back To Homepage</a>
 </div>
 </body>
