@@ -18,13 +18,13 @@ class DisplayCards
             ) {
                 return '';
             }
-            $cardTitle = str_replace(' ', '%20', $card['title']);
+            $cardTitleLink = str_replace(' ', '%20', $card['title']);
             $cardString = "<div class='displayCard'>";
             $cardString .= "<p class='displayCardText'>Card Title: ". $card['title'] . "</p>";
             $cardString .= "<p class='displayCardText'>Card Type: " . $card['cardType'] . "</p>";
             $cardString .= "<p class='displayCardText'Card Color: " . $card['color'] . "</p>";
             $cardString .= "<p class='displayCardText'>Rarity: " . $card['raritySet'] . "</p>";
-            $cardString .= "<a class='viewCardButton' type='submit' href=/card/" .  $cardTitle . ">View Card</a>";
+            $cardString .= "<a class='viewCardButton' type='submit' href=/card/" .  $cardTitleLink . ">View Card</a>";
             $cardString .= "</form>";
             $cardString .= "</div>";
             $outputString .=  $cardString;

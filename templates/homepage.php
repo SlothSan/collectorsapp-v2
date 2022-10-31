@@ -10,6 +10,7 @@ $displayCards = new DisplayCards;
     <meta name="keywords" content="'Mike Oram', 'PHP', 'CSS', 'MTG', 'Magic the Gathering', 'SLIM'" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="Mike Orams PHP Collectors App - Rewritten using Slim framework and MVC" />
+    <link href="/css/normalize.css" type="text/css" rel="stylesheet">
     <link href="/scss/homepage.css" rel="stylesheet" type="text/css" />
     <title>MTG Card Collector App</title>
     <script src="https://kit.fontawesome.com/3824660a61.js" crossorigin="anonymous"></script>

@@ -1,0 +1,111 @@
+$background-color: #2F4F4F;
+$background-red: #4d0013;
+$font-white: #FFFFFF;
+
+body {
+  font-family: "Beleren", "sans-serif";
+}
+
+.cardpageBody {
+  width: 100%;
+  height: auto;
+  background-image: url("/assets/imgs/backgrounds/background1.jpeg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  .mtgCardContainer {
+    width: 100%;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .mtgCardHeader {
+      height: 200px;
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: $background-color;
+      color: $font-white;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      .mtgCardHeaderTitle {
+        font-size: 2rem;
+      }
+      .mtgCardHeaderText {
+        font-style: italic;
+        font-size: 1.2rem;
+      }
+    }
+    .returnButton {
+      text-decoration: none;
+      background-color: $background-red;
+      color: $font-white;
+      padding: 30px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      border: solid 2px $font-white;
+      font-family: "Beleren", "sans-serif";
+      font-weight: bold;
+    }
+  }
+}
+
+.cardBackGreen {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  background-image: url("/assets/imgs/cardBacks/greenCardBack.png");
+  background-color: $font-white;
+  height: 698px;
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.cardBackBlue {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  background-image: url("/assets/imgs/cardBacks/blueCardBack.png");
+  background-color: $font-white;
+  height: 698px;
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.cardBackRed {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  background-image: url("/assets/imgs/cardBacks/redCardBack.png");
+  background-color: $font-white;
+  height: 698px;
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.cardBackBlack {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  background-image: url("/assets/imgs/cardBacks/blackCardBack.png");
+  background-color: $font-white;
+  height: 698px;
+  width: 500px;
+  margin-bottom: 10px;
+}
+
+.cardBackWhite {
+  display: flex;
+  flex-direction: column;
+  position: static;
+  background-image: url("/assets/imgs/cardBacks/whiteCardBack.png");
+  background-color: $font-white;
+  height: 698px;
+  width: 500px;
+  margin-bottom: 10px;
+}
+
