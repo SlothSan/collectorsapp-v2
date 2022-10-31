@@ -19,7 +19,13 @@ $displayCardGenerator = new DisplayCardGenerator;
         <h1 class="mtgCardHeaderTitle">MTG Card Generator</h1>
         <p class="mtgCardHeaderText">Takes the info from the DB and generates a card using PHP & CSS</p>
     </div>
-    <?php echo $displayCardGenerator->createMTGCard($card) ?>
+    <?php try {
+        echo $displayCardGenerator->createMTGCard($card);
+    } catch (TypeError $error) {
+        echo $URL="/";
+        echo "<script type='text/javascript'>document.location.href='{$URL}';</script>";
+        echo '<META HTTP-EQUIV="refresh" content="0;URL=' . $URL . '">';;
+    } ?>
     <a class="returnButton" href="/">Go Back To Homepage</a>
 </div>
 </body>
