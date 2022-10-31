@@ -43,7 +43,7 @@ body {
   align-items: center;
   header {
     width: 350px;
-    height: 350px;
+    height: 500px;
     padding: 5px;
     margin: 10px;
     border-radius: 10px;
@@ -63,6 +63,22 @@ body {
     }
     .headerItalicText {
       font-style: italic;
+    }
+    .registrationContainer {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .registrationContainer a {
+      text-decoration: none;
+      margin-top: 10px;
+      color: $font-white;
+      padding: 30px;
+      background-color: $background-red;
+      border: 2px solid $font-white;
+      border-radius: 10px;
     }
   }
 }

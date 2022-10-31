@@ -28,6 +28,10 @@ $displayCards = new DisplayCards;
                     <p class="headerText">This is a project to showcase my PHP, CSS and SQL skills learnt at iO Academy.</p>
                     <p class="headerText">There is a database that holds Magic the gathering cards, they are displayed below with a link to view the card.</p>
                 </div>
+                <div class="registrationContainer">
+                    <p class="headerText">Click the link below to be taken to a page to add a card to the collection!</p>
+                    <a href="/createcard">Create a Card!</a>
+                </div>
             </div>
         </header>
     </div>

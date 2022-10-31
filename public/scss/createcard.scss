@@ -1,0 +1,79 @@
+$background-color: #2F4F4F;
+$background-red: #4d0013;
+$font-white: #FFFFFF;
+
+@font-face {
+  font-family: 'Beleren';
+  src: url('../assets/fonts/Beleren-Bold.woff2') format('woff2'),
+  url('../assets/fonts/Beleren-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+.createCardBody {
+  font-family: "Beleren", "sans-serif";
+  width: 100%;
+  height: fit-content;
+  background-color: $background-color;
+}
+
+.createCardSection {
+  display: flex;
+  flex-direction: column;
+}
+
+.createCardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: $background-color;
+  color: $font-white;
+}
+
+.createCardExplainer {
+  width: 400px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-bottom: 1px solid $font-white;
+}
+
+.createCardText {
+  margin: 15px 0 10px 0;
+  border-top:  1px solid $font-white;
+}
+
+.createCardLink {
+  margin: 20px 0 20px 0;
+  text-decoration: underline;
+  color: white;
+}
+
+.createCardForm {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+.createCardForm label{
+  margin-top: 10px;
+}
+
+.createCardForm input:last-of-type {
+  margin-top: 10px;
+  width: 400px;
+  background-color: $background-red;
+  color: $font-white;
+  border: 1px solid $font-white;
+  padding: 15px 15px;
+  font-family: "Beleren", "sans-serif";
+}
+
+.createCardTextarea {
+  resize: vertical;
+}

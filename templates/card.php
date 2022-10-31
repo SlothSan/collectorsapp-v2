@@ -1,7 +1,4 @@
 <?php
-if (is_bool($card)) {
-    header('Location: /');
-}
 use App\Helpers\DisplayCardGenerator;
 $displayCardGenerator = new DisplayCardGenerator;
 ?>

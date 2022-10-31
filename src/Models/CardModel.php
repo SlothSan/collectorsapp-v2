@@ -33,4 +33,9 @@ class CardModel
         return $query->fetch();
     }
 
+    public function addCardToDb()
+    {
+
+    }
+
 }
